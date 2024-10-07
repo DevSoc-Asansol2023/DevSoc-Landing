@@ -2,3 +2,4 @@
 ### Also kindly maintain an ordered numbered list while adding your name
 
 1. Gourav Yadav
+2. Souvik Majee
