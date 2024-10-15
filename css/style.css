@@ -1,0 +1,8 @@
+.cardsk{
+    background: linear-gradient(135deg,#F8F7F3,#FFBE7A);
+    transition: all 0.4s ease;
+}
+.cardsk:hover{
+    transform: scale(0.95);
+    background: linear-gradient(160deg,#f8f7f3,#ffbe7a);
+}
