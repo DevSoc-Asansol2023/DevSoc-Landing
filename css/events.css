@@ -1,3 +1,96 @@
+:root {
+    --primary-color: #ff5361;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --footer-bg: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
 /* Styling for the Events section */
 .events-title {
     width: 100%;
@@ -64,4 +157,87 @@
 .img-events .content .text-section .event-description {
     padding: 5px;
     text-align: justify;
+}
+
+.footer-section {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+    text-align: left; /* Left-aligns text for readability */
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin: 20px 0;
+    flex: 1 1 200px; /* Makes sections flexible with a minimum width */
+}
+
+.footer-links h5,
+.footer-contact h5,
+.footer-social h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer-links ul,
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin: 5px 0;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: var(--primary-color);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column; /* Keeps social icons stacked */
+    align-items: center; /* Center-aligns social icons */
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px; /* Space between heading and icons */
+}
+
+.footer-social i {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.footer-social i:hover {
+    transform: scale(1.1);
+}
+
+/* Additional styling for the copyright notice */
+.footer-section p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }

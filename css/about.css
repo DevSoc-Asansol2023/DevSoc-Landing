@@ -94,7 +94,7 @@ body {
 
 /* About Section Styles */
 .about-section {
-    padding: 40px 20px;
+    padding: 30px 70px;
 }
 
 .about-container {
@@ -126,6 +126,54 @@ body {
     line-height: 1.6;
     text-align: justify;
 }
+
+
+/* Styling for the about-section */
+.about-section {
+    height: 81vh;
+    display: flex;
+}
+
+.about-section .left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.about-section .right-panel {
+    flex: 1;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .right-panel .content {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+}
+
+.about-section .right-panel .content .top-section {
+    text-align: left;
+    font-size: 25px;
+}
+
+.about-section .right-panel .content .bottom-section {
+    padding:2px; 
+    margin-top: 10px; 
+    text-align: justify; 
+    font-size: 19px;
+}
+.about-section .right-panel .content .bottom-section p{
+    margin-top: 10px;
+}
+    
 
 .footer-section {
     background-color: var(--footer-bg);
@@ -210,6 +258,19 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
+@media (max-width: 1250px) {
+    .about-section{
+        height: 75vh;
+        padding: 25px 25px;
+    }
+}
+@media (max-width: 950px) {
+    .about-section{
+        height: 65vh;
+        padding: 25px 25px;
+    }
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -239,5 +300,26 @@ body {
 
     .about-image {
         margin-bottom: 20px;
+    }
+    .about-section{
+        flex-direction: column;
+        height: 95vh;
+        padding: 25px 25px;
+    }
+    .about-section .left-panel{
+        max-height: 350px;
+    }
+    .about-section .right-panel .content{
+        display: flex;
+        padding: 0px 5px;
+        margin-top: 80px;
+        justify-content: flex-start;
+    }
+    .about-section .right-panel .content .top-section {
+        font-size: 23px;
+    }
+    
+    .about-section .right-panel .content .bottom-section {
+        padding:2px; margin-top: 10px; text-align: justify; font-size: 19px;
     }
 }
