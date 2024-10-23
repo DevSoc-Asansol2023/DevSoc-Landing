@@ -1,0 +1,67 @@
+/* Styling for the Events section */
+.events-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.events-title .title-text {
+    color: #ff5361;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.img-events {
+    border: 3px solid black;
+    width: 300px;
+    min-width: 300px;
+    border-radius: 15px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-events .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    flex: 6;    
+    padding: 15px;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.img-events .content .image-section {
+    flex-basis: 50% ;
+    padding: 15px;
+}
+
+.img-events .content .text-section {
+    flex-basis: 30%;
+    padding: 10px;
+}
+
+.img-events .content .text-section .event-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5361;
+    margin-bottom: 5px;
+}
+
+.img-events .content .text-section .event-description {
+    padding: 5px;
+    text-align: justify;
+}
