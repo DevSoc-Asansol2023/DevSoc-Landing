@@ -108,18 +108,27 @@ body {
 .events-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .img-events {
-    border: 3px solid black;
-    width: 300px;
+    border: 1px solid #ddd;
+    width: 320px;
     min-width: 300px;
-    border-radius: 15px;
+    border-radius: 12px;
     height: 380px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-events:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .img-events .content {
@@ -135,7 +144,10 @@ body {
     background-color: lightgray;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
 }
 .img-events .content .image-section {
     flex-basis: 50% ;
@@ -148,15 +160,18 @@ body {
 }
 
 .img-events .content .text-section .event-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #ff5361;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .img-events .content .text-section .event-description {
     padding: 5px;
     text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
 }
 
 .footer-section {
